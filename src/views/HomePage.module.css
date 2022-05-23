@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0 10px 0 10px;
+}
+.title {
+  margin-bottom: 100px;
+}
+.title h1 {
+  color: rgb(94, 121, 253);
+}
+.input {
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 350px;
+  align-items: center;
+  justify-content: start;
+  margin-top: 50px;
+  /* height: max-content; */
+}
+
+.nav .menu {
+  box-shadow: rgb(154, 152, 152) 0 0 10px;
+  border-radius: 10px;
+  height: max-content;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.nav .menu .item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.nav .menu .item:not(:last-child) {
+  border-bottom: rgb(186, 186, 186) solid 0.5px;
+}
+.nav img {
+  height: 10px;
+  align-self: flex-end;
+  transition: all 0.5s linear;
+}
+
+.item.active {
+  color: orange;
+}
+.item.active img {
+  transform: rotate(180deg);
+}
+.subTitle {
+  height: 0;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  background-color: rgb(243, 243, 233);
+  padding: 0 5px;
+  transform-origin: center;
+}
+.subTitle > * {
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: start;
+}
+.subTitle.open > *:hover {
+  background-color: aliceblue;
+}
+.subTitle.open {
+  /* height: 40px; */
+  height: 180px;
+  padding: 0 5px;
+}

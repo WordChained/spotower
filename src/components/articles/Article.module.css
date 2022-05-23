@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  padding: 2px;
+}
+p {
+  word-break: break-all;
+}
+.readMore {
+  color: darkblue;
+}
+.readMore img {
+  height: 10px;
+  transform: rotate(-90deg);
+}

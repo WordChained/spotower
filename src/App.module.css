@@ -1,0 +1,13 @@
+.hamburgerContainer {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hamburgerContainer img {
+  height: 30px;
+  margin-right: 10px;
+  filter: invert(28%) sepia(74%) saturate(2973%) hue-rotate(221deg)
+    brightness(98%) contrast(96%);
+}
